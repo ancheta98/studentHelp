@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+
+    <!-- feel free to try to make this work if you have the time, I'll get back to you on if I can fix it sometime! -->
+    <img
+      src="https://news.nationalgeographic.com/content/dam/news/2018/05/17/you-can-train-your-cat/02-cat-training-NationalGeographic_1484324.ngsversion.1526587209178.adapt.1900.1.jpg"
+      value="something"
+      id="firstImg"
+    />
+
+    <script>
+      var myObj = {
+        name: "Angel",
+        age: 19
+      };
+
+      //example
+      $("button").click(function() {
+        $("img").attr("width", "500");
+      });
+
+      $( document ).ready(function() {
+        $("#firstImg").click(function() {
+        console.log($("firstImg").attr("value"), "here are the values");
+      });
+      });
+
+
+
+      //document.getElementById("#firstImg")
+
+      console.log(myObj.name);
+    </script>
+  </body>
+</html>
