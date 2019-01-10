@@ -16,8 +16,8 @@
     <!-- feel free to try to make this work if you have the time, I'll get back to you on if I can fix it sometime! -->
     <img
       src="https://news.nationalgeographic.com/content/dam/news/2018/05/17/you-can-train-your-cat/02-cat-training-NationalGeographic_1484324.ngsversion.1526587209178.adapt.1900.1.jpg"
-      value="something"
       id="firstImg"
+      something="theoretical value"
     />
 
     <script>
@@ -27,13 +27,13 @@
       };
 
       //example
-      $("button").click(function() {
-        $("img").attr("width", "500");
-      });
-
       $( document ).ready(function() {
         $("#firstImg").click(function() {
-        console.log($("firstImg").attr("value"), "here are the values");
+          //changed the method I was using to getAttribute and used the "this" keyword.
+          //Here, "this" refers to the thing that was clicked, javascript can remember it since we are still in the... 
+          // ... click function
+        console.log(this.getAttribute("something"), "here are the values");
+        console.log(this)
       });
       });
 
